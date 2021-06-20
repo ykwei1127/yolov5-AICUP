@@ -15,6 +15,7 @@ python convert_large.py
 ## 訓練模型
 3. 訓練yolov5x模型
 ```
+cd ..
 python train.py --img-size 640 --batch-size 8 --epoch 500 --data ./data/AICUP.yaml --cfg ./models/yolov5x.yaml --weight weights/yolov5x.pt --device 1
 
 ```
