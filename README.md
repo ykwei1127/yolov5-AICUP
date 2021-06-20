@@ -12,12 +12,14 @@ python move_file.py
 ```
 python convert_large.py
 ```
+## 訓練模型
 3. 訓練yolov5x模型
 ```
 python train.py --img-size 640 --batch-size 8 --epoch 500 --data ./data/AICUP.yaml --cfg ./models/yolov5x.yaml --weight weights/yolov5x.pt --device 1
 
 如果在linux terminal，可改執行: source train.sh
 ```
+## 測試結果
 4. 訓練好之後會產生run資料夾，底下會有train/exp/資料夾放訓練好的模型
 5. 利用訓練好的模型判斷圖片文字框，--source後面接的參數為測試圖片的目錄，--weight後面參數則為訓練好的模型位置runs/train/exp/weight/best.pt
 ```
