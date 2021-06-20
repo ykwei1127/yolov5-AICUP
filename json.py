@@ -41,8 +41,8 @@ def writeToFile(output_path,file_name, result):
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 	parser.add_argument('--input_json_dir',type=str,default="./datasets/json",help='path of GT json directory')
-	parser.add_argument('--output_txt_dir',type=str,default="./datasets/AICUP1/train_gts",help='path of GT txt directory')
-	parser.add_argument('--image_list',type=str,default="./datasets/AICUP1/train_list.txt",help='path of image list')
+	parser.add_argument('--output_txt_dir',type=str,default="./datasets/train_gts",help='path of GT txt directory')
+	parser.add_argument('--image_list',type=str,default="./datasets/train_list.txt",help='path of image list')
 	arg = parser.parse_args()
 
 	json_list = os.listdir(arg.input_json_dir)
