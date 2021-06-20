@@ -44,7 +44,7 @@ source test.sh
 ```
 python transform.py
 ```
-## reference from official yolov5 github
+## Reference from official yolov5 github
 ```
 https://github.com/ultralytics/yolov5
 ```
