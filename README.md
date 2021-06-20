@@ -40,7 +40,7 @@ python detect.py --source ../PrivateTestDataset/img --weights runs/train/exp/wei
 ```
 source test.sh
 ```
-9. 利用transform.py將抓出來的結果轉換成繳交用的csv檔格式
+9. 偵測完的結果會放在run/detect/資料夾底下，利用transform.py將抓出來的結果轉換成繳交用的csv檔格式，
 ```
 python transform.py
 ```
